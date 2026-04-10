@@ -1,16 +1,16 @@
 # US Loan Portfolio Analysis — Power BI + Python
 
-An end-to-end portfolio project that combines **business intelligence in Power BI** with **data analysis and credit risk modeling in Python** on a US loan dataset.
+An end-to-end portfolio project that combines **Power BI dashboarding** with **Python-based data analysis and machine learning** on a US loan portfolio dataset.
 
 This project was designed to showcase both:
-- **dashboarding, reporting, and storytelling**
+- **business intelligence, reporting, and storytelling**
 - **data cleaning, exploratory analysis, predictive modeling, and interpretation**
 
 ---
 
 ## Project Overview
 
-The goal of this project is to analyze a US loan portfolio from multiple perspectives:
+This project analyzes a US loan portfolio from multiple perspectives:
 
 - portfolio volume and repayment performance
 - geographic distribution of lending activity
@@ -20,10 +20,10 @@ The goal of this project is to analyze a US loan portfolio from multiple perspec
 
 The project is split into two complementary parts:
 
-### 1. Power BI
+### Power BI
 A multi-page interactive dashboard for business and portfolio analysis.
 
-### 2. Python
+### Python
 A notebook-based analytical workflow covering:
 - data cleaning
 - exploratory data analysis
@@ -33,8 +33,6 @@ A notebook-based analytical workflow covering:
 ---
 
 ## Power BI Report Pages
-
-The Power BI dashboard includes the following pages:
 
 ### 1. Executive Overview
 High-level business view of:
@@ -77,28 +75,20 @@ Detailed exploration page with:
 
 ## Python Workflow
 
-The Python side of the project is organized into three notebooks:
-
 ### `01_data_cleaning_eda.ipynb`
-Covers:
-- dataset loading
-- feature cleaning
-- helper column creation
-- target framing
+- data loading
+- cleaning and feature engineering
 - exploratory analysis
-- geographic and risk visualizations
+- state-level and risk visualizations
 
 ### `02_default_prediction.ipynb`
-Covers:
 - binary target creation
-- train/test split
 - preprocessing pipelines
 - Logistic Regression baseline
 - Random Forest model
 - model evaluation
 
 ### `03_model_interpretation.ipynb`
-Covers:
 - logistic regression coefficient interpretation
 - random forest feature importance
 - business interpretation of risk drivers
@@ -112,9 +102,9 @@ For predictive modeling, the default problem was framed as a **binary classifica
 - `Fully Paid` → 0
 - `Charged Off` → 1
 
-`Current` loans were excluded from the target definition because they do not represent a final observed repayment outcome.
+`Current` loans were excluded because they do not represent a final observed loan outcome.
 
-This notebook workflow was intentionally designed to avoid **target leakage**, excluding repayment-related fields that would not be known at origination.
+To avoid **target leakage**, repayment-related variables known only after origination were excluded from the predictive feature set.
 
 ---
 
@@ -123,22 +113,21 @@ This notebook workflow was intentionally designed to avoid **target leakage**, e
 ### Power BI
 - Power Query data preparation
 - calculated columns and measures
-- KPI cards
-- time-based reporting
+- KPI reporting
+- time-based analysis
 - geographic mapping
-- slicers and interactive filtering
-- dashboard design and color theming
-- report storytelling across multiple pages
+- slicers and interactivity
+- dashboard design and visual storytelling
 
 ### Python / Data Science
 - pandas-based data cleaning
 - feature engineering
-- EDA with matplotlib and plotly
+- exploratory data analysis
 - binary classification
 - scikit-learn preprocessing pipelines
 - Logistic Regression
 - Random Forest
-- model evaluation and interpretation
+- model interpretation
 
 ---
 
