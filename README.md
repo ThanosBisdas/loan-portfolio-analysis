@@ -44,11 +44,15 @@ High-level business view of:
 - loan status breakdown
 - geographic distribution of funded volume
 
+![Executive Overview](images/pb_1.png)
+
 ### 2. Geographic Analysis
 State-level portfolio view showing:
 - top states by funded amount
 - top states by default rate
 - map-based portfolio distribution
+
+![Geographic Analysis](images/pb_2.png)
 
 ### 3. Portfolio Performance
 Performance and repayment analysis including:
@@ -56,6 +60,8 @@ Performance and repayment analysis including:
 - funded volume trend
 - loan status composition
 - payment received by status group
+
+![Portfolio Performance](images/pb_3.png)
 
 ### 4. Borrower Credit & Risk Profile
 Borrower segmentation by:
@@ -65,11 +71,15 @@ Borrower segmentation by:
 - interest rate band
 - home ownership
 
+![Borrower Credit & Risk Profile](images/pb_4.png)
+
 ### 5. Loan Detail Explorer
 Detailed exploration page with:
 - slicers
 - loan-level table
 - selected portfolio KPIs
+
+![Loan Detail Explorer](images/pb_5.png)
 
 ---
 
